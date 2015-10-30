@@ -3,11 +3,20 @@
 # Part 1
 
 def sum arr
-  return 0
+  arr.inject(0) do |total, number|
+	  total + number
+	end
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  if arr == []
+    return 0
+    elsif arr.length == 1
+    return arr[0]
+  else
+    sorted_arr = arr.sort
+    sorted_arr[-1] + sorted_arr[-2]
+  end
 end
 
 def sum_to_n? arr, n
