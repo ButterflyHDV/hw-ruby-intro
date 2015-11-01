@@ -10,16 +10,16 @@ end
 
 def max_2_sum arr
   if arr == []
-    return 0
-    elsif arr.length == 1
-    return arr[0]
+    0
+  elsif arr.length == 1
+    arr[0]
   else
     sorted_arr = arr.sort
     sorted_arr[-1] + sorted_arr[-2]
   end
 end
 
-def sum_to_n? arr, n
+def sum_to_n?(arr,n)
   # YOUR CODE HERE
 end
 
